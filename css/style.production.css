@@ -1,0 +1,9 @@
+<DOCTYPE html>
+CssSyntaxError: <css input>:232:10: Missed semicolon
+
+  230 | }
+  231 | a {
+> 232 |   color: primary-color: #357b70;
+      |          ^
+  233 | }
+  234 |
