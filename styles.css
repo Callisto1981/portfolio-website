@@ -14,7 +14,7 @@ a {
   color: var(--primary-color);
 }
 
-body{
+body {
   font-family: 'UnifrakturMaguntia&display=swap', cursive;
   font-weight: 400;
   font-size: 16px;
@@ -35,17 +35,19 @@ h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
 a {
   color: #357b70;
 }
 
-a:hover, a-focus {
-  /*No underlining when hovering over a link */
+a:hover,
+a:focus {
+  /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:visited {
-  /*visited link*/
+  /* visited link */
   color: #05676e;
 }
 
@@ -54,7 +56,7 @@ a:active {
   color: #489c79;
 }
 
-button
+button,
 .button1,
 .button2,
 .button3 {
@@ -65,16 +67,20 @@ button
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
+
+  /* Takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* Adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+
+  /* Gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -87,6 +93,7 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
 }
+
 .button__secondary {
   background-color: #e0b345;
   color: #2b2b2b;
@@ -154,7 +161,6 @@ button:focus,
 .grid_item {
   background-color: lightgray;
   text-align: center;
-
 }
 
 .grid {
@@ -169,19 +175,23 @@ button:focus,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media all and (max-width: 750px){
+
+@media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -191,9 +201,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #f76414;
   }
+
   100% {
     fill: #f76414;
   }
@@ -207,6 +219,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -220,6 +233,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -228,6 +242,7 @@ button:focus,
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 a {
   color: var(--primary-color);
 }
