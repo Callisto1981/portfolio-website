@@ -37,7 +37,7 @@ h3 {
 }
 
 a {
-  color: #357b70;
+  color: var(--primary-color);
 }
 
 a:hover,
